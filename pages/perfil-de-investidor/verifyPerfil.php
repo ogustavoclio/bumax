@@ -1,0 +1,1 @@
+<?php header('Location: ./dashboard/minha-carteira.php') ?>
