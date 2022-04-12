@@ -2,7 +2,7 @@
 
 	// INSIRA users nome, email, telphone, senha OS DADOS nome-completo e email e telphone e password
 
-	$conn = mysqli_connect("localhost", "root", "", "bumax");
+	$conn = mysqli_connect("208.109.25.159", "bumaxRoot", "1@Bumaxio", "bumax");
 
 	$nome = $_REQUEST['nome-completo'];
 	$email = $_REQUEST['email'];
@@ -20,7 +20,7 @@
 				echo 'Deu erro, em alguma coisa :(';
 		 		echo '<script>window.location.href = "./index.php";</script>';
 			}else{
-				echo 'deu certo caraio';
+                echo '<script>window.location.href = "../../config/auth/dados-cadastrais.php";</script>';
 			}
 		}else{
 		 	echo '<script>alert("esse telefone já foi registrado :(")</script>';

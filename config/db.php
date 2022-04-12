@@ -1,11 +1,11 @@
 <?php
 
 	header("content-type: text/html;charset=utf-8");
-	$link = mysqli_connect("localhost", "root", "", "bumax");
+	$link = mysqli_connect("208.109.25.159", "bumaxRoot", "1@Bumaxio", "");
 
 	#estabelecemos conexão com o banco de dados
-	mysqli_connect('localhost','root','') or die(mysqli_error());
-	$conn = mysqli_connect('localhost','root','') or die(mysqli_error());
+	mysqli_connect('208.109.25.159','bumaxRoot','1@Bumaxio') or die(mysqli_error());
+	$conn = mysqli_connect('208.109.25.159','bumaxRoot','1@Bumaxio') or die(mysqli_error());
 
 	#seleciona o banco de dados
 	mysqli_select_db($conn, 'bumax') or die(mysqli_error());

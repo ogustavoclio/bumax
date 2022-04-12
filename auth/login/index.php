@@ -1,3 +1,4 @@
+
 <?php include('../../config/vars.php') ?>
 
 <?php 	if (!empty(@$_SESSION['email'])){header('Location: http://192.168.0.124/bumax/dashboard/minha-carteira.php');} ?>

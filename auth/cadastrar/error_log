@@ -1,0 +1,7 @@
+[11-Apr-2022 20:14:36 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/opc3bjfm6xo7/public_html/auth/cadastrar/verifyRegister.php on line 5
+[11-Apr-2022 20:14:36 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/opc3bjfm6xo7/public_html/auth/cadastrar/verifyRegister.php on line 14
+[11-Apr-2022 20:14:36 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/opc3bjfm6xo7/public_html/auth/cadastrar/verifyRegister.php on line 15
+[11-Apr-2022 20:14:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/opc3bjfm6xo7/public_html/auth/cadastrar/verifyRegister.php on line 17
+[11-Apr-2022 20:14:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/opc3bjfm6xo7/public_html/auth/cadastrar/verifyRegister.php on line 18
+[11-Apr-2022 20:14:36 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/opc3bjfm6xo7/public_html/auth/cadastrar/verifyRegister.php on line 19
+[11-Apr-2022 20:14:36 UTC] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, bool given in /home/opc3bjfm6xo7/public_html/auth/cadastrar/verifyRegister.php on line 34

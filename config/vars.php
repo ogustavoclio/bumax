@@ -1,3 +1,5 @@
+<?php ini_set('error_reporting', E_ALL); // mesmo resultado de: error_reporting(E_ALL);
+ini_set('display_errors', 1); ?>
 <!-- bootstrap install -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'/>
@@ -28,12 +30,12 @@
 
 
 	// links
-	$appLocal = 'http://localhost/bumax';
-	$appAssets = 'http://localhost/bumax/assets';
+	$appLocal = 'http://bumax.io';
+	$appAssets = 'http://bumax.io/assets';
 
 
 	// auth links
-	$logout = 'http://localhost/bumax/config/auth/logout.php';
+	$logout = 'http://bumax.io/config/auth/logout.php';
 
 
 	// session links
@@ -47,7 +49,7 @@
 
 
 	if (@$_SESSION['email'] = '') {
-		header('Location: http://localhost/bumax/auth/login/');
+		header('Location: http://bumax.io/auth/login/');
 	}
 
 
@@ -58,7 +60,7 @@
 	<?php 
 	
 	session_start();
-	$emailSession = 'gustavomeiradsg@gmail.com';
+	$emailSession = @$_SESSION['email'];
 	
 	// querys
 	$query = mysqli_query($conn, "SELECT * FROM users WHERE email = '$emailSession'");
